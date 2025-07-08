@@ -1,0 +1,41 @@
+body {
+  font-family: 'Inter', 'Helvetica Neue', sans-serif;
+}
+
+.bg-mint { background-color: #d6f5e3; }
+.bg-mint-dark:hover { background-color: #bcefd1; }
+.bg-lavender { background-color: #a78bfa; }
+.bg-lavender-dark:hover { background-color: #8b5cf6; }
+.bg-blush { background-color: #fce4ec; }
+.text-lavender { color: #a78bfa; }
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.4);
+}
+
+/* Fancy Hover Glow */
+.hover\:glow-lavender:hover {
+  box-shadow: 0 0 10px #a78bfa;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+.hover\:glow-blush:hover {
+  box-shadow: 0 0 10px #fce4ec;
+  transform: scale(1.02);
+  transition: 0.3s;
+}
+
+/* Fade Animations */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+.fade-in-delay {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
