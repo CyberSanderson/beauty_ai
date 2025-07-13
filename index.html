@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <meta name="p:domain_verify" content="86e81e3c90043b0f02bf578e5fe01079"/>
+  
+
+  <!-- Mobile menu button -->
+  <button id="menu-btn" class="md:hidden focus:outline-none" aria-label="Toggle menu">
+    <svg class="w-6 h-6 text-lavender" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" 
+      xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16"></path>
+    </svg>
+  </button>
+
+  <!-- Mobile menu (hidden by default) -->
+  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+    <a href="index.html" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-mint hover:text-lavender">Quiz</a>
+    <a href="directory.html" class="block px-6 py-3 border-b border-gray-200 text-gray-700 hover:bg-mint hover:text-lavender">Product Directory</a>
+    <a href="blog.html" class="block px-6 py-3 text-gray-700 hover:bg-mint hover:text-lavender">Blog</a>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+
+
 
 
 
